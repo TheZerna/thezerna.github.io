@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Development of a Dynamic Challenge Adjustment</title>
+	<link rel="stylesheet" href="../dist/reveal.css">
+	<style>
+		section {
+			font-size: larger;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+			<!-- Presentation -->
+			<section>
+				<section>
+					<h2>Development of a Dynamic Challenge Adjustment</h2>
+					<p>Using Q-learning to provide game challenges in a Tower-Defense</p>
+				</section>
+			</section>
+			<!-- Disposition -->
+			<section>
+				<h3>Disposition</h3>
+				<div>
+					<ol style="text-align:left;">
+						<li>Presentation and game sample</li>
+						<li>Project purpose</li>
+						<li>Results</li>
+						<li>Thoughts and realization</li>
+						<li>Perspective</li>
+					</ol>
+				</div>
+
+			</section>
+			<!-- The game -->
+			<section>
+				<section>
+					<h3>The Last Stand</h3>
+					<p class="fragment">Tower-Defense game with shooter elements</p>
+					<p class="fragment">Dynamic Challenge Adjustment</p>
+					<p class="fragment">Powered by Reinforcement Learning: Q-Learning</p>
+				</section>
+				<section data-background-iframe="https://warfangstudios.com/laststand/index.html"
+					data-background-interactive>
+				</section>
+			</section>
+			<!-- Purpose -->
+			<section>
+				<section data-auto-animate>
+					<h3>The goal</h3>
+					<p class="fragment">To explore the possibilities of a <strong>Dynamic Challenge Adjustment
+							(DCA)</strong>
+						algorithm</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Like what?</h3>
+					<p class="fragment">Like delivering unique game experiences</p>
+				</section>
+				<section data-auto-animate>
+					<h3>How?</h3>
+					<p class="fragment">Game balancing</p>
+					<p class="fragment">Procedural content generation</p>
+					<img class="fragment" src="../img/dca.png" width="25%">
+				</section>
+				<section>
+					<h3>By what means?</h3>
+					<p class="fragment">By identifying the player's skill set through challenge</p>
+					<img class="fragment" src="../img/skills.png" width="25%">
+				</section>
+			</section>
+			<!-- Seque -->
+			<section>
+				<section>
+					<h3>Did I succeed in doing so?</h3>
+					<p class="fragment">... yes and no</p>
+				</section>
+				<section>
+					<h3>Succeeded</h3>
+					<p class="fragment">In exploring the different opportunities in game balancing via challenges and
+						creating a design centered around challenges
+					</p>
+				</section>
+				<section>
+					<h3>Failed</h3>
+					<p class="fragment">In scientifically proving that there is a benificial effect of implementing a
+						DCA
+					</p>
+				</section>
+				<section>
+					<p>... and there is many reasons why.</p>
+				</section>
+			</section>
+			<!-- Flaws -->
+			<section>
+				<section>
+					<h3>Project flaws</h3>
+					<div style="text-align:left;">
+						<ul>
+							<br>
+							<li class="fragment">Contradicting goals</li>
+							<br>
+							<li class="fragment">TD framework, but hybrid challenges</li>
+							<br>
+							<li class="fragment">CORGIS* were only used on variance group</li>
+							<li class="fragment">Challenge Originating from Recent Gameplay Interaction Scale</li>
+							<br>
+							<li class="fragment">Cognitive challenges</li>
+						</ul>
+					</div>
+
+				</section>
+				<section>
+					<h3>Contradicting goals</h3>
+					<ul>
+						<li class="fragment">To place the player in flow</li>
+						<br>
+						<li class="fragment">To let the player progress a far as possible</li>
+						<br>
+						<hr>
+						<br>
+						<img src="../img/goal1.png" width="25%">
+					</ul>
+				</section>
+				<section>
+					<h3>TD framework, but hybrid challenges</h3>
+					<p class="fragment">Game was build as a TD, but the challenges were designed for more than just TD
+					</p>
+					<br>
+					<hr>
+					<br>
+					<img src="../img/td.png" width="60%">
+				</section>
+				<section>
+					<h3>CORGIS were only used on variance group</h3>
+					<br>
+					<hr>
+					<br>
+					<img src="../img/corgis.png" width="50%">
+				</section>
+				<section>
+					<h3>Cogntive challenges</h3>
+					<p class="fragment">Game were designed to faciliate performative and cognitive challenges</p>
+					<p class="fragment">... but only performative challenges were used and evaluated</p>
+					<br>
+					<hr>
+					<br>
+					<img src="../img/challenge.png" width="25%">
+				</section>
+			</section>
+			<!-- Realization -->
+			<section>
+				<section>
+					<h3>Realization</h3>
+					<p class="fragment">Things I've realised later on...</p>
+				</section>
+				<section>
+					<h3>Skill and challenge as signatures</h3>
+					<p class="fragment">It's easy to imagine painting a picture of a certain playstyle</p>
+					<img src="../img/skill.png" width="30%" class="fragment">
+					<p class="fragment">... But imagine having as a challenge indicator aswell</p>
+					<img src="../img/challenge_signature.png" width="30%" class="fragment">
+				</section>
+				<section>
+					<h3>AI and semantics</h3>
+					<p class="fragment">Can an AI understand the semantics of something challenging?</p>
+					<div class="fragment">
+						<img src="../img/td.png" width="33%">
+						<img src="../img/skills.png" width="20%">
+					</div>
+				</section>
+				<section>
+					<h3>AI and humanity</h3>
+					<p class="fragment">HumaneAI (Crowley, J. et al. , 2019)</p>
+					<p class="fragment">Human Centric AI - human-machine interaction, cognitive science and social
+						sciences</p>
+				</section>
+				<section>
+					<h3>A good game experience?</h3>
+					<p class="fragment">If everything went right, would it guarantee a good game experience?</p>
+					<p class="fragment">Would players progress an almost infinite of waves?</p>
+				</section>
+			</section>
+			<!-- Perspective -->
+			<section>
+				<section
+					data-background-image="https://static.wikia.nocookie.net/orcsmustdie_gamepedia/images/7/76/Steamgif-waystoslay.gif/revision/latest/scale-to-width-down/610?cb=20180211164846"
+					data-background-size="contain" data-background-repeat="no-repeat">
+				</section>
+				<section>
+					<h3>Double-Track System</h3>
+					<p class="fragment">Fine-grained sentiment classification (Hong X. et al., 2021)</p>
+					<img class="fragment" src="../img/dts.png" width="50%">
+				</section>
+				<section>
+					<h3>DCA as supportive tool</h3>
+					<img src="../img/dca_driver.png" width="50%" class="fragment">
+				</section>
+				<section>
+					<h3>Game challenge/difficulty calculation</h3>
+					<a
+						href="https://my.machinations.io/d/Copy-of-%5BDocs%5D-Stack-Jump:-I-have-a-diagram--Now-what-/f959cdd6f08611ec8c2902f943517e50">Machinations</a>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="../dist/reveal.js"></script>
+	<script>
+		Reveal.initialize();
+	</script>
+
+</body>
+
+</html>

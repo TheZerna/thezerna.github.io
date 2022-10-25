@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Development of a Dynamic Challenge Adjustment</title>
+	<link rel="stylesheet" href="dist/reveal.css">
+	<style>
+		section {
+			font-size: larger;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- Presentation -->
+			<section>
+				<section>
+					<h2>En præsentation af Dune Zerna</h2>
+				</section>
+			</section>
+			<!-- Disposition -->
+			<section>
+				<h3>Tidslinje</h3>
+				<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1ERu7DhbMxANrUwvcB9mF-hQDLv27VyTl9STffpanMYk&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+			</section>
+			<!-- The game -->
+			<section>
+				<section>
+					<h3>The Last Stand</h3>
+				</section>
+				<section data-background-iframe="https://warfangstudios.com/laststand/index.html"
+					data-background-interactive>
+				</section>
+			</section>
+			<!-- Spørgsmål -->
+			<section>
+					<h3>Spørgsmål</h3>
+					<a href="https://www.menti.com/aldio6pk6hb2" target="_blank">Stil anonymt spørgsmål</a>
+			</section>
+			<!-- Mads og Monopolet -->
+			<section>
+					<h3>Dune og Monopolet</h3>
+					<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/al5hwtb4zv48pfti19amssh7x73gz2g4/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+			</section>
+			<!-- Den Fynske Spilfabrik -->
+			<section>
+				<h3>Den Fynske Spilfabrik</h3>
+				<a href="https://www.denfynskespilfabrik.dk/indmelding-i-foreningen/" target="_blank">Indmeldelse</a>
+			</section>
+			<section>
+				<h3>Fang mig på</h3>
+				<p class="fragment">dune@zerna.dk</p>
+				<a href="https://www.linkedin.com/in/dune-zerna-07b203166/" class="fragment">LinkedIn</a>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script>
+		Reveal.initialize({
+			multiplex: {
+			secret: null, // Obtained from the socket.io server. Gives this (the master) control of the presentation
+			id: "5a966f604a3cffc8", // Obtained from socket.io server
+			url: 'https://reveal-multiplex.glitch.me/' // Location of socket.io server
+			},
+
+  			dependencies: [
+				{ src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true },
+				{ src: 'https://reveal-multiplex.glitch.me/master.js', async: true }
+			]
+		});
+	</script>
+
+</body>
+
+</html>
